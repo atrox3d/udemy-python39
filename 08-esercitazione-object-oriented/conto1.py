@@ -43,7 +43,11 @@ class ContoCorrente(Conto):
 
 class GestoreContiCorrenti:
     @staticmethod
-    def bonifico(sorgente: ContoCorrente, destinazione: ContoCorrente, importo):
+    def bonifico(
+                    sorgente:       ContoCorrente,  # test
+                    destinazione:   ContoCorrente,
+                    importo
+                ):
         sorgente.preleva(importo)
         destinazione.deposita(importo)
 
